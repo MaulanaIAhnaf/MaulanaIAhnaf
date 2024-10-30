@@ -1,0 +1,35 @@
+// Function untuk menampilkan alert setelah pencarian (contoh)
+document.querySelector(".search-section form").addEventListener("submit", function(event) {
+  event.preventDefault();
+  alert("Search functionality is under development.");
+});
+
+// Data untuk slide: gambar dan deskripsi
+const slides = [
+  { image: 'images/slide1.jpg', description: 'Deskripsi untuk Slide 1' },
+  { image: 'images/slide2.jpg', description: 'Deskripsi untuk Slide 2' },
+  { image: 'images/slide3.jpg', description: 'Deskripsi untuk Slide 3' }
+];
+
+let currentSlide = 0;
+
+function showSlide(index) {
+  const slideImage = document.querySelector('.slide-image');
+  const slideDescription = document.querySelector('.slide-description');
+
+  // Mengubah sumber gambar dan teks deskripsi
+  slideImage.src = slides[index].image;
+  slideDescription.textContent = slides[index].description;
+}
+
+// Fungsi untuk mengganti slide secara otomatis
+function nextSlide() {
+  currentSlide = (currentSlide + 1) % slides.length;
+  showSlide(currentSlide);
+}
+
+// Menjalankan pergantian slide setiap 3 detik
+setInterval(nextSlide, 3000);
+
+// Menampilkan slide pertama saat halaman pertama kali dimuat
+showSlide(currentSlide);
