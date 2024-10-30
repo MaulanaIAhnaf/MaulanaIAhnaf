@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delta cahaya Property Style</title>
+  <!-- Link ke CSS eksternal -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/Libs/remixicon/3.5.0/remixicon.min.css">
+
+</head>
+<body>
+
+  <nav>
+      <div class="nav-logo">
+        <a href="#">
+        </a>
+      </div>
+
+
+      <ul class="nav-links">
+        <li class="link"><a href="#">Home</a></li>
+        <li class="link"><a href="#">Features</a></li>
+        <li class="link"><a href="#">Pricing</a></li>
+        <li class="link"><a href="#">About</a></li>
+      </ul>
+  </nav>
+  <!-- Header dengan Logo -->
+  <header>
+    <img src="img/DCP.jpg" alt="Logo Delta Property" class="logo">
+    <h1>PT. Delta Cahaya Property</h1>
+  </header>
+
+   <!-- Kontainer untuk Slide -->
+   <div class="content">
+    <div class="slide">
+      <img src="images/slide1.jpg" alt="Slide 1" class="slide-image">
+      <h2 class="slide-description">Deskripsi untuk Slide 1</h2>
+    </div>
+  </div>
+
+  <!-- Link ke JavaScript eksternal -->
+  <script src="script.js"></script>
+</body>
+</html>
+
+  <!-- Kontainer untuk tombol navigasi utama -->
+  <nav class="button-container">
+    <button onclick="window.location.href='index.html'">Home</button>
+    <button onclick="window.location.href='about.html'">About Us</button>
+    <button onclick="window.location.href='projects.html'">Projects</button>
+    <button onclick="window.location.href='gallery.html'">Gallery</button>
+    <button onclick="window.location.href='contact.html'">Contact</button>
+    <button onclick="window.location.href='blog.html'">Blog</button>
+    <button onclick="window.location.href='search.html'">Property Search</button>
+  </nav>
+
+  <!-- Form untuk pencarian properti -->
+  <section class="search-section">
+    <form action="/submit" method="post">
+      <label for="search">Search Property:</label>
+      <input type="text" id="search" name="search" placeholder="Search properties...">
+      <button type="submit">Search</button>
+    </form>
+  </section>
+
+  <!-- Link ke JavaScript eksternal -->
+  <script src="script.js"></script>
+</body>
+</html>
